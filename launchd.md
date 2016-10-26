@@ -1,6 +1,7 @@
 Links
 ---
 - [launchd](http://launchd.info/)
+- [luncy](https://github.com/eddiezane/lunchy)
 
 Job definitions
 ---
@@ -18,6 +19,4 @@ Job definitions
 	</dict>
 </plist>
 ```
-Helpers
----
-- [luncy](https://github.com/eddiezane/lunchy)
+
