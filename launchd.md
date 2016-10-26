@@ -3,6 +3,7 @@ Links
 - [launchd](http://launchd.info/)
 - [luncy](https://github.com/eddiezane/lunchy)
 - [A Golang port of lunchy, a friendly wrapper for launchctl](https://github.com/bennylope/houston)
+- [homebrew services](https://github.com/AdamEdgett/homebrew-services)
 
 Job definitions
 ---
