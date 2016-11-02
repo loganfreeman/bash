@@ -45,3 +45,23 @@ print_success() {
     # Print output in green
     printf "\e[0;32m [✔] $1\e[0m\n"
 }
+
+add_line_to_file() {
+    execute "printf '$1\n' >> $2"
+}
+
+execute() {
+    sudo bash -c "$1"
+}
+
+install_package() {
+    sudo apt-get install --assume-yes --force-yes --quiet "$1"
+}
+
+update() {
+    # Resynchronize the package index files from their sources
+    execute "sudo apt-get update -qqy" "update"
+    #                              │└─ assume "yes" as the
+    #                              │   answer to all prompts
+    #                              └─ suppress output
+}
