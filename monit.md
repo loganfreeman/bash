@@ -30,7 +30,7 @@ couchdb
 ################################################################
 
 check process couchdb
-  with pidfile /var/run/couchdb/couchdb.pid
+  with pidfile /usr/local/var/run/couchdb/couchdb.pid
   start program = "/etc/init.d/couchdb start"
   stop program = "/etc/init.d/couchdb stop"
   if failed host localhost port 5984 proto http then restart
