@@ -1,0 +1,1 @@
+- [AWS - a practical guide](https://github.com/open-guides/og-aws)
