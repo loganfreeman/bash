@@ -1,0 +1,1 @@
+- [How to use ftp in combination with .netrc](http://www.mavetju.org/unix/netrc.php)
