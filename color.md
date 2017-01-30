@@ -72,3 +72,23 @@ On_IPurple='\033[0;105m'  # Purple
 On_ICyan='\033[0;106m'    # Cyan
 On_IWhite='\033[0;107m'   # White
 ```
+
+tput
+---
+```shell
+# Colored output.
+function colored() {
+  GREEN=$(tput setaf 4)
+  YELLOW=$(tput setaf 3)
+  NORMAL=$(tput sgr0)
+  REVERSE=$(tput rev)
+} 
+
+# Uncolored output.
+function uncolored() {
+  GREEN=""
+  YELLOW=""
+  NORMAL=""
+  REVERSE=""
+}
+```
