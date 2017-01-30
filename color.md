@@ -92,4 +92,15 @@ function uncolored() {
   NORMAL=""
   REVERSE=""
 }
+# Enable colors if supported by terminal.
+if [[ -t 1 ]] && [[ -n "$TERM" ]] && which tput &>/dev/null && tput colors &>/dev/null; then
+  ncolors=$(tput colors)
+  if [[ -n "$ncolors" ]] && [[ "$ncolors" -ge 8 ]] ; then
+    colored
+  else
+    uncolored
+  fi
+else
+  uncolored
+fi
 ```
