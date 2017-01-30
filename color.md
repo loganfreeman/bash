@@ -73,7 +73,7 @@ On_ICyan='\033[0;106m'    # Cyan
 On_IWhite='\033[0;107m'   # White
 ```
 
-tput
+[tput](http://linuxcommand.org/lc3_adv_tput.php)
 ---
 ```shell
 # Colored output.
