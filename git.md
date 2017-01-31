@@ -1,1 +1,2 @@
 - [git-standup](https://github.com/kamranahmedse/git-standup)
+- [git-extras](https://github.com/tj/git-extras}
