@@ -15,3 +15,4 @@ sudo launchctl load /System/Library/LaunchDaemons/com.apple.syslogd.plist
 clean up files automatically
 ---
 - [cron-job-to-delete-files-older-than-3-days](http://unix.stackexchange.com/questions/136804/cron-job-to-delete-files-older-than-3-days)
+- [delete-old-files-in-a-folder-automatically-in-linux](https://www.maketecheasier.com/delete-old-files-in-a-folder-automatically-in-linux/)
