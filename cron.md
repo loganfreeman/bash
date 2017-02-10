@@ -12,3 +12,6 @@ Then restart syslog
 sudo launchctl unload /System/Library/LaunchDaemons/com.apple.syslogd.plist 
 sudo launchctl load /System/Library/LaunchDaemons/com.apple.syslogd.plist 
 ```
+clean up files automatically
+---
+- [cron-job-to-delete-files-older-than-3-days](http://unix.stackexchange.com/questions/136804/cron-job-to-delete-files-older-than-3-days)
