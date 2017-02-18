@@ -2,3 +2,4 @@
 - [Installing PHP 7 on OS X](http://w3bsmart.blogspot.com/2015/08/installing-php-7-on-os-x-yosemite.html)
 - [multiple php versions](https://getgrav.org/blog/macos-sierra-apache-multiple-php-versions)
 - [macos-sierra-apache-mysql-vhost-apc](https://getgrav.org/blog/macos-sierra-apache-mysql-vhost-apc)
+- [Apache, PHP, and MySQL with Homebrew](https://echo.co/blog/os-x-1010-yosemite-local-development-environment-apache-php-and-mysql-homebrew)
