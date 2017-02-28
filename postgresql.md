@@ -15,6 +15,11 @@ initdb /usr/local/var/postgres
 /usr/local/Cellar/postgresql/<version>/bin/createuser -s postgres
 ```
 
+or
+```
+sudo -u postgres createuser --superuser $USER
+```
+
 To start server at startup
 ```
 mkdir -p ~/Library/LaunchAgents
