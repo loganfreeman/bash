@@ -2,3 +2,5 @@
 
 
 [cask](https://github.com/caskroom/homebrew-cask)
+
+[bundle](https://github.com/Homebrew/homebrew-bundle)
