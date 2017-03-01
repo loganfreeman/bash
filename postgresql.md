@@ -26,3 +26,11 @@ launchctl load ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist
 [upgrade](https://collectiveidea.com/blog/archives/2016/01/08/postgresql95-upgrade-with-homebrew)
 
 [pg_upgrade](https://www.postgresql.org/docs/9.6/static/pgupgrade.html)
+```
+pg_upgrade \
+  -d /usr/local/var/postgres \
+  -D /usr/local/var/postgres9.6 \
+  -b /usr/local/Cellar/postgresql/9.4.5_2/bin/ \
+  -B /usr/local/Cellar/postgresql/9.5.0/bin/ \
+  -v
+```
