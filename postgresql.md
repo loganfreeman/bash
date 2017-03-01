@@ -21,3 +21,6 @@ mkdir -p ~/Library/LaunchAgents
 ln -sfv /usr/local/opt/postgresql/*.plist ~/Library/LaunchAgents
 launchctl load ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist
 ```
+
+
+[upgrade](https://collectiveidea.com/blog/archives/2016/01/08/postgresql95-upgrade-with-homebrew)
