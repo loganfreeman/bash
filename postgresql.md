@@ -30,7 +30,7 @@ launchctl load ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist
 pg_upgrade \
   -d /usr/local/var/postgres \
   -D /usr/local/var/postgres9.6 \
-  -b /usr/local/Cellar/postgresql/9.5.2/bin/ \
+  -b /usr/local/Cellar/postgresql/9.5.5/bin/ \
   -B /usr/local/Cellar/postgresql/9.6.2/bin/ \
   -v
 ```
