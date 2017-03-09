@@ -5,3 +5,7 @@ for f in *.txt; do
 mv "$f" "$(basename "$f" .txt).text"
 done
 ```
+one liner
+```
+for f in *.example; do cp "$f" "$(basename "$f" .example)";  done
+```
