@@ -16,3 +16,10 @@ kill all mysql process
 ```
 ps aux | grep mysql | grep -v grep | sed 's/\s\+/ /g' | cut -d' ' -f2 | xargs kill -9
 ```
+
+
+kill catalina
+---
+```shell
+ps aux | grep catalina | head -n 1 | cut -d' ' -f2 | xargs kill -9
+```
