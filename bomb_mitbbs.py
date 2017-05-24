@@ -2,6 +2,8 @@ import sys
 
 import urllib2
 
+from datetime import datetime
+
 request_headers = {
 "Accept-Language": "en-US,en;q=0.5",
 "User-Agent": "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0",
@@ -16,8 +18,9 @@ def query():
   contents = urllib2.urlopen(request).read()
 
 def main(unused_command_line_args):
-    for i in xrange(1000):
+    for i in xrange(10000000):
         query()
+        print datetime.now().strftime('%Y-%m-%d %H:%M:%S')
     return 0
 
 if __name__ == '__main__':
