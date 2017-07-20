@@ -23,3 +23,9 @@ kill catalina
 ```shell
 ps aux | grep catalina | head -n 1 | cut -d' ' -f2 | xargs kill -9
 ```
+
+clean up backup files
+---
+```shell
+find . -name '*~' -exec rm {} \;
+```
