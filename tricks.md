@@ -29,3 +29,9 @@ clean up backup files
 ```shell
 find . -name '*~' -exec rm {} \;
 ```
+
+rename files using regular expression
+---
+```shell
+find . -name "stock*" -exec rename -v -n 's/stock/traffic/' '{}' \;
+```
