@@ -33,5 +33,20 @@ find . -name '*~' -exec rm {} \;
 rename files using regular expression
 ---
 ```shell
-find . -name "stock*" -exec rename -v -n 's/stock/traffic/' '{}' \;
+# -n switch means no-action; -v means verbose
+find ./src -name "stock*" -exec rename -v -n 's/stock/traffic/' '{}' \;
 ```
+
+find and replace files recursively
+---
+```shell
+find ./src -name "*.txt" -print0 | xargs -0 sed -i'' -e 's/foo/bar/g'
+# This will remove the xargs dependency
+find . -type f -name "*.txt" -exec sed -i'' -e 's/foo/bar/g' {} +
+```
+
+xargs explained [here](https://linux.die.net/man/1/xargs)
+
+sed explained [here](http://www.grymoire.com/Unix/Sed.html#uh-62h)
+
+exec explained [here](https://unix.stackexchange.com/questions/195939/what-is-meaning-of-in-finds-exec-command)
