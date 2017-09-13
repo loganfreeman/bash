@@ -69,3 +69,10 @@ Arg: /etc/rc.netboot
 $ find /etc/rc* -exec echo Arg: {} '+'
 Arg: /etc/rc.common /etc/rc.common~previous /etc/rc.local /etc/rc.netboot
 ```
+
+cp list of files
+---
+```
+# diff-filter=A only files that are added in the latter branch
+git diff --name-only --diff-filter=A development release -- lib/ | xargs -J % cp % tmp/lib/
+```
