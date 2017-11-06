@@ -16,3 +16,9 @@ remove comments in all java files
 ```
 find src -name "*.java" -print0 | xargs -0 sed -i -e'/\/\*/{:loop;/\/\*.*\*\//{d;b out};N;b loop};:out'
 ```
+
+cp all files added from branch a to branch b to tmp directory
+---
+```
+git diff --name-status release/uofu-release-3.0.0.1b..release/uofu-release-3.0.0.1a -- lib | grep ^A | awk '{print $2}' | xargs -I % cp % tmp/lib/
+```
