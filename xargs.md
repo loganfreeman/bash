@@ -22,3 +22,9 @@ cp all files added from branch a to branch b to tmp directory
 ```
 git diff --name-status release/uofu-release-3.0.0.1b..release/uofu-release-3.0.0.1a -- lib | grep ^A | awk '{print $2}' | xargs -I % cp % tmp/lib/
 ```
+
+cp all png files added
+---
+```
+git diff --name-status release/uofu-release-3.0.0.1b..release/uofu-release-3.0.0.1a | grep ^A | grep png | awk '{print $2}' | xargs -I % rsync -R % tmp/
+```
