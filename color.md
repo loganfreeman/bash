@@ -104,3 +104,7 @@ else
   uncolored
 fi
 ```
+
+Links
+---
+- [tput setaf color table](https://unix.stackexchange.com/questions/269077/tput-setaf-color-table-how-to-determine-color-codes)
