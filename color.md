@@ -105,6 +105,15 @@ else
 fi
 ```
 
+
+fail
+---
+```
+function fail(){
+  tput setaf 1; echo "Failure: $*" && tput sgr0
+  exit 1
+}
+```
 Links
 ---
 - [tput setaf color table](https://unix.stackexchange.com/questions/269077/tput-setaf-color-table-how-to-determine-color-codes)
