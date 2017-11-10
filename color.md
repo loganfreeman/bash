@@ -108,3 +108,4 @@ fi
 Links
 ---
 - [tput setaf color table](https://unix.stackexchange.com/questions/269077/tput-setaf-color-table-how-to-determine-color-codes)
+- [prompt-color-using-tput](http://linux.101hacks.com/ps1-examples/prompt-color-using-tput/)
