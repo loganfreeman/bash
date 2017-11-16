@@ -76,3 +76,9 @@ cp list of files
 # diff-filter=A only files that are added in the latter branch
 git diff --name-only --diff-filter=A development release -- lib/ | xargs -J % cp % tmp/lib/
 ```
+
+cp all files and rename
+---
+```
+for f in *.yml.default; do cp $f ${f%%.default}; done
+```
