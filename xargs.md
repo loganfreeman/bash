@@ -1,5 +1,7 @@
 [Linux and Unix xargs command tutorial with examples](https://shapeshed.com/unix-xargs/)
 
+[How to use the xargs argument twice in the command on Linux?](https://www.systutorials.com/qa/1986/how-to-use-the-xargs-argument-twice-in-the-command-on-linux)
+
 kill all mysql process
 ---
 ```
