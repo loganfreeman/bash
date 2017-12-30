@@ -2,6 +2,24 @@
 
 [How to use the xargs argument twice in the command on Linux?](https://www.systutorials.com/qa/1986/how-to-use-the-xargs-argument-twice-in-the-command-on-linux)
 
+How to run multiple commands with xargs
+---
+It is possible to run multiple commands with xargs by using the -I flag. This replaces occurrences of the argument with the argument passed to xargs. 
+```
+cat foo.txt
+one
+two
+three
+
+cat foo.txt | xargs -I % sh -c 'echo %; mkdir %'
+one 
+two
+three
+
+ls 
+one two three
+```
+
 kill all mysql process
 ---
 ```
