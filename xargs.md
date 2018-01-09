@@ -50,3 +50,13 @@ cp all png files added
 ```
 git diff --name-status release/uofu-release-3.0.0.1b..release/uofu-release-3.0.0.1a | grep ^A | grep png | awk '{print $2}' | xargs -I % rsync -R % tmp/
 ```
+
+batch convert xlsx to csv
+---
+```
+ls | grep \.xlsx$ | sed 'p;s/\.xlsx/\.csv/' | xargs -n2 ssconvert
+```
+
+```
+ls *.svg.png | xargs basename -s .svg.png | xargs -I {} mv {}.svg.png {}.png
+```
